@@ -1,8 +1,5 @@
 class TaxisPassengersJoinTable < ActiveRecord::Migration
   def change
-    create_join_table :, : do |t|
-      # t.index [:_id, :_id]
-      # t.index [:_id, :_id]
-    end
+    create_join_table :taxis, :passengers
   end
 end
